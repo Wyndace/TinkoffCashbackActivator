@@ -1,0 +1,15 @@
+{
+  "name": "Tinkoff's cashback activator",
+  "description": "Create a button on tinkoff.ru/bonuses/not_activated when clicked on which the entire cashback is activated",
+  "author": "Wyndace (Vasilev Alexander)",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+    "matches": ["*://*.tinkoff.ru/bonuses/not_activated/*"],
+    "js": ["./js/back.js"],
+    "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": ["/js/script.js"]
+}
